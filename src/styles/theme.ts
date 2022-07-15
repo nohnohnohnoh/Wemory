@@ -3,6 +3,8 @@ import media from './media'
 const color = {
   white: 'white',
   black: 'black',
+  blue: 'blue',
+  red: 'red',
 }
 
 export const theme = {
