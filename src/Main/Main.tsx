@@ -16,7 +16,8 @@ const Test = styled.h1`
     font-size:80px;
     color:red
   `}
-  ${({ theme }) => theme.flexMixIn('center', 'center')}
+  /* ${({ theme }) => theme.flexMixIn('center', 'center')} */
+  ${({ theme }) => theme.postionMixin('fixed', 50, 50)}
 `
 
 export default Main
