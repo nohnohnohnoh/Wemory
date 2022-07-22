@@ -5,7 +5,7 @@ import { theme } from 'styles/theme'
 import MenuModal from './MenuModal'
 
 const Nav = () => {
-  const [menuToggle, setMenuToggle] = useState<boolean>(true)
+  const [menuToggle, setMenuToggle] = useState<boolean>(false)
 
   const menuHandle = (e: React.MouseEvent<SVGAElement>) => {
     setMenuToggle(!menuToggle)
@@ -22,7 +22,7 @@ const Nav = () => {
           <Menu onClick={menuHandle}></Menu>
         </MenuBox>
       </NavBox>
-      {menuToggle ? <MenuModal /> : null}
+      {menuToggle && <MenuModal menuToggle={menuToggle} />}
     </NavPage>
   )
 }
